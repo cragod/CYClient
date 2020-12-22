@@ -9,6 +9,33 @@
           "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
           "version": "5.4.1"
         }
+      },
+      {
+        "package": "mongo-swift-driver",
+        "repositoryURL": "https://github.com/mongodb/mongo-swift-driver.git",
+        "state": {
+          "branch": null,
+          "revision": "ec67468132743919e90a34a76073afcc4a13355e",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
+          "version": "8.1.2"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio",
+        "state": {
+          "branch": null,
+          "revision": "43931b7a7daf8120a487601530c8bc03ce711992",
+          "version": "2.25.1"
+        }
       }
     ]
   },

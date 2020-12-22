@@ -18,6 +18,10 @@ class AIMSSellingListViewModel: BaseModel {
     }
     
     func load() {
+        if loading {
+            return
+        }
+        loading = true
         Requester<[AIMSSelling], [AIMSSelling]>.requestPath(.aimsSellings)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (value) in

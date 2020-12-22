@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AIMSSellingListView: View {
     
-    @ObservedObject var listViewModel = AIMSSellingListViewModel()
+    @ObservedObject var listViewModel: AIMSSellingListViewModel
     
     @ViewBuilder
     var footer: some View {

@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct AIMSPositionListView: View {
-    @ObservedObject var listViewModel = AIMSPositionListViewModel()
+    @ObservedObject var listViewModel: AIMSPositionListViewModel
     
     @ViewBuilder
     var body: some View {
         content
-            .setupRefresh {
-                listViewModel.load()
-            }
     }
     
     @ViewBuilder

@@ -12,6 +12,7 @@ enum MainCategory: String, CaseIterable, Identifiable {
     
     case aims
     case aip
+    case backtest
     
     var id: String {
         rawValue
@@ -23,6 +24,8 @@ enum MainCategory: String, CaseIterable, Identifiable {
             return "AIMS 策略"
         case .aip:
             return "定投记录"
+        case .backtest:
+            return "回测"
         }
     }
     
@@ -32,6 +35,31 @@ enum MainCategory: String, CaseIterable, Identifiable {
             return "bus"
         case .aip:
             return "signature"
+        case .backtest:
+            return "clock.arrow.circlepath"
+        }
+    }
+}
+
+class MainCategoryManager {
+    static let shared = MainCategoryManager()
+    private var mainCategoryViews = [String: AnyView]()
+    
+    func destination(with category: MainCategory) -> AnyView {
+        if let view = mainCategoryViews[category.id] {
+            return view
+        }
+        switch category {
+        case .aims:
+            let view = AnyView(AIMSContainerView())
+            mainCategoryViews[category.id] = view
+            return view
+        case .aip:
+            let view = AnyView(Text("hahaha"))
+            mainCategoryViews[category.id] = view
+            return view
+        case .backtest:
+            return AnyView(Text("BackTest"))
         }
     }
 }
