@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		28387A3A25921BB1006B12E1 /* BacktestContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A3925921BB1006B12E1 /* BacktestContainerView.swift */; };
+		28387A3E2592230F006B12E1 /* BacktestTaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A3D2592230F006B12E1 /* BacktestTaskListViewModel.swift */; };
+		28387A4225922449006B12E1 /* BacktestOverviewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A4125922449006B12E1 /* BacktestOverviewListView.swift */; };
+		28387A4525922458006B12E1 /* BacktestOverviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A4425922458006B12E1 /* BacktestOverviewDetailView.swift */; };
+		28387A49259225CA006B12E1 /* BacktestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A48259225CA006B12E1 /* BacktestModels.swift */; };
+		28387A4D25924431006B12E1 /* BacktestTaskDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28387A4C25924431006B12E1 /* BacktestTaskDetailViewModel.swift */; };
 		28B25BF32591EA2B00F8075E /* CYQuantClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */; };
 		28B25BF72591EA2E00F8075E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B25BF62591EA2E00F8075E /* Assets.xcassets */; };
 		28B25BFA2591EA2E00F8075E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B25BF92591EA2E00F8075E /* Preview Assets.xcassets */; };
@@ -33,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		28387A3925921BB1006B12E1 /* BacktestContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestContainerView.swift; sourceTree = "<group>"; };
+		28387A3D2592230F006B12E1 /* BacktestTaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestTaskListViewModel.swift; sourceTree = "<group>"; };
+		28387A4125922449006B12E1 /* BacktestOverviewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestOverviewListView.swift; sourceTree = "<group>"; };
+		28387A4425922458006B12E1 /* BacktestOverviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestOverviewDetailView.swift; sourceTree = "<group>"; };
+		28387A48259225CA006B12E1 /* BacktestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestModels.swift; sourceTree = "<group>"; };
+		28387A4C25924431006B12E1 /* BacktestTaskDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktestTaskDetailViewModel.swift; sourceTree = "<group>"; };
 		28B25BEF2591EA2B00F8075E /* CYQuantClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYQuantClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYQuantClientApp.swift; sourceTree = "<group>"; };
 		28B25BF62591EA2E00F8075E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +84,17 @@
 			isa = PBXGroup;
 			children = (
 				28387A3925921BB1006B12E1 /* BacktestContainerView.swift */,
+				28387A4125922449006B12E1 /* BacktestOverviewListView.swift */,
+				28387A4425922458006B12E1 /* BacktestOverviewDetailView.swift */,
+			);
+			path = Backtest;
+			sourceTree = "<group>";
+		};
+		28387A3C259222FB006B12E1 /* Backtest */ = {
+			isa = PBXGroup;
+			children = (
+				28387A3D2592230F006B12E1 /* BacktestTaskListViewModel.swift */,
+				28387A4C25924431006B12E1 /* BacktestTaskDetailViewModel.swift */,
 			);
 			path = Backtest;
 			sourceTree = "<group>";
@@ -99,8 +120,8 @@
 			children = (
 				28B25C032591EA8A00F8075E /* Common */,
 				28B25C3F2591F12200F8075E /* Mongo */,
-				28B25C0B2591EA9800F8075E /* Models */,
 				28B25C112591EAA200F8075E /* Views */,
+				28B25C0B2591EA9800F8075E /* Models */,
 				28B25C152591EAAA00F8075E /* ViewModels */,
 				28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */,
 				28B25BF62591EA2E00F8075E /* Assets.xcassets */,
@@ -132,8 +153,9 @@
 		28B25C0B2591EA9800F8075E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				28B25C0C2591EA9800F8075E /* AIMSModels.swift */,
 				28B25C0D2591EA9800F8075E /* GenericModel.swift */,
+				28B25C0C2591EA9800F8075E /* AIMSModels.swift */,
+				28387A48259225CA006B12E1 /* BacktestModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +177,7 @@
 			children = (
 				28B25C162591EAAA00F8075E /* BaseModel.swift */,
 				28B25C172591EAAA00F8075E /* AIMS */,
+				28387A3C259222FB006B12E1 /* Backtest */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -264,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28387A49259225CA006B12E1 /* BacktestModels.swift in Sources */,
 				28B25C1A2591EAAA00F8075E /* BaseModel.swift in Sources */,
+				28387A4225922449006B12E1 /* BacktestOverviewListView.swift in Sources */,
 				28B25C082591EA8A00F8075E /* MainCategory.swift in Sources */,
 				28B25C1C2591EAAA00F8075E /* AIMSSellingListViewModel.swift in Sources */,
 				28B25C0E2591EA9800F8075E /* AIMSModels.swift in Sources */,
@@ -277,10 +302,13 @@
 				28B25C412591F12200F8075E /* DBManager.swift in Sources */,
 				28B25BF32591EA2B00F8075E /* CYQuantClientApp.swift in Sources */,
 				28B25C2E2591EB3300F8075E /* AIMSPositionListView.swift in Sources */,
+				28387A4525922458006B12E1 /* BacktestOverviewDetailView.swift in Sources */,
+				28387A3E2592230F006B12E1 /* BacktestTaskListViewModel.swift in Sources */,
 				28B25C072591EA8A00F8075E /* Requester.swift in Sources */,
 				28387A3A25921BB1006B12E1 /* BacktestContainerView.swift in Sources */,
 				28B25C2A2591EB3300F8075E /* SideBar.swift in Sources */,
 				28B25C1B2591EAAA00F8075E /* AIMSPositionListViewModel.swift in Sources */,
+				28387A4D25924431006B12E1 /* BacktestTaskDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

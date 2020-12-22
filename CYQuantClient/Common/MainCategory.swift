@@ -55,11 +55,15 @@ class MainCategoryManager {
             mainCategoryViews[category.id] = view
             return view
         case .aip:
-            let view = AnyView(Text("hahaha"))
+            let view = AnyView(Text("hahaha").setupRefresh {
+                
+            })
             mainCategoryViews[category.id] = view
             return view
         case .backtest:
-            return AnyView(Text("BackTest"))
+            let view = AnyView(BacktestContainerView())
+            mainCategoryViews[category.id] = view
+            return view
         }
     }
 }

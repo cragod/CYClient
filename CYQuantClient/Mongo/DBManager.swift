@@ -9,6 +9,28 @@ import Foundation
 import MongoSwift
 import NIO
 
+enum DBName: String {
+    case backtest
+}
+
+enum DBCollectionType {
+    case backtestOverview
+    
+    var dbName: String {
+        switch self {
+        case .backtestOverview:
+            return DBName.backtest.rawValue
+        }
+    }
+    
+    var collectionName: String {
+        switch self {
+        case .backtestOverview:
+            return "overview"
+        }
+    }
+}
+
 class DBManager {
     static let shared = DBManager()
     
@@ -32,5 +54,9 @@ class DBManager {
         cleanupMongoSwift()
         
         try? elg.syncShutdownGracefully()
+    }
+    
+    func collection(with type: DBCollectionType) -> MongoCollection<BSONDocument>? {
+        client?.db(type.dbName).collection(type.collectionName)
     }
 }

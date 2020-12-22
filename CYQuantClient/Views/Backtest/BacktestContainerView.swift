@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct BacktestContainerView: View {
+    private let backtestViewModel = BacktestTaskListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        content
+            .setupRefresh {
+                // TODO
+            }
+            .onAppear(perform: {
+                if backtestViewModel.tasks.isEmpty {
+                    backtestViewModel.loadTasks()
+                }
+            })
     }
-}
-
-struct BacktestContainerView_Previews: PreviewProvider {
-    static var previews: some View {
-        BacktestContainerView()
+    
+    @ViewBuilder
+    var content: some View {
+        VStack{
+            Divider().padding(.bottom, 0)
+            NavigationView {
+                BacktestOverviewListView(viewModel: backtestViewModel)
+                Text("左边选个任务查看")
+            }
+        }
     }
 }
