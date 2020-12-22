@@ -11,6 +11,9 @@ struct BacktestOverviewDetailView: View {
     @ObservedObject var viewModel: BacktestTaskDetailViewModel
     
     var body: some View {
-        Text(viewModel.name)
+        NavigationView {
+            Text(viewModel.name)
+            Text("ToolBar")
+        }
     }
 }
