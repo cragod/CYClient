@@ -10,10 +10,14 @@ import SwiftUI
 
 enum MainCategory: String, CaseIterable, Identifiable {
     
+    case backtest
     case aims
     case aip
-    case backtest
     
+    static var defaultSelection: MainCategory {
+        .backtest
+    }
+
     var id: String {
         rawValue
     }

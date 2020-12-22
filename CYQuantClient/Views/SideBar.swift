@@ -36,7 +36,7 @@ struct SideBar: View {
             .padding(.trailing, 10)
             .onAppear(perform: {
                 if selected == nil {
-                    selected = .aims
+                    selected = MainCategory.defaultSelection
                 }
             })
         })
