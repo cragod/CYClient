@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28B25BF32591EA2B00F8075E /* CYQuantClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */; };
+		28B25BF72591EA2E00F8075E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B25BF62591EA2E00F8075E /* Assets.xcassets */; };
+		28B25BFA2591EA2E00F8075E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B25BF92591EA2E00F8075E /* Preview Assets.xcassets */; };
+		28B25C072591EA8A00F8075E /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C042591EA8A00F8075E /* Requester.swift */; };
+		28B25C082591EA8A00F8075E /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C052591EA8A00F8075E /* MainCategory.swift */; };
+		28B25C092591EA8A00F8075E /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C062591EA8A00F8075E /* Formatter.swift */; };
+		28B25C0E2591EA9800F8075E /* AIMSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C0C2591EA9800F8075E /* AIMSModels.swift */; };
+		28B25C0F2591EA9800F8075E /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C0D2591EA9800F8075E /* GenericModel.swift */; };
+		28B25C132591EAA200F8075E /* ViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C122591EAA200F8075E /* ViewHolder.swift */; };
+		28B25C1A2591EAAA00F8075E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C162591EAAA00F8075E /* BaseModel.swift */; };
+		28B25C1B2591EAAA00F8075E /* AIMSPositionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C182591EAAA00F8075E /* AIMSPositionListViewModel.swift */; };
+		28B25C1C2591EAAA00F8075E /* AIMSSellingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C192591EAAA00F8075E /* AIMSSellingListViewModel.swift */; };
+		28B25C202591EB2100F8075E /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C1F2591EB2100F8075E /* CategoryManager.swift */; };
+		28B25C2A2591EB3300F8075E /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C222591EB3300F8075E /* SideBar.swift */; };
+		28B25C2B2591EB3300F8075E /* AIMSSellingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C242591EB3300F8075E /* AIMSSellingListView.swift */; };
+		28B25C2E2591EB3300F8075E /* AIMSPositionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C272591EB3300F8075E /* AIMSPositionListView.swift */; };
+		28B25C2F2591EB3300F8075E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C282591EB3300F8075E /* View+Extensions.swift */; };
+		28B25C302591EB3300F8075E /* AIMSContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B25C292591EB3300F8075E /* AIMSContainerView.swift */; };
+		28B25C342591EB9400F8075E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28B25C332591EB9400F8075E /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28B25BEF2591EA2B00F8075E /* CYQuantClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYQuantClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYQuantClientApp.swift; sourceTree = "<group>"; };
+		28B25BF62591EA2E00F8075E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28B25BF92591EA2E00F8075E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28B25BFB2591EA2E00F8075E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B25BFC2591EA2E00F8075E /* CYQuantClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CYQuantClient.entitlements; sourceTree = "<group>"; };
+		28B25C042591EA8A00F8075E /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		28B25C052591EA8A00F8075E /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
+		28B25C062591EA8A00F8075E /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		28B25C0C2591EA9800F8075E /* AIMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSModels.swift; sourceTree = "<group>"; };
+		28B25C0D2591EA9800F8075E /* GenericModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		28B25C122591EAA200F8075E /* ViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHolder.swift; sourceTree = "<group>"; };
+		28B25C162591EAAA00F8075E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		28B25C182591EAAA00F8075E /* AIMSPositionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSPositionListViewModel.swift; sourceTree = "<group>"; };
+		28B25C192591EAAA00F8075E /* AIMSSellingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSSellingListViewModel.swift; sourceTree = "<group>"; };
+		28B25C1F2591EB2100F8075E /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
+		28B25C222591EB3300F8075E /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		28B25C242591EB3300F8075E /* AIMSSellingListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSSellingListView.swift; sourceTree = "<group>"; };
+		28B25C272591EB3300F8075E /* AIMSPositionListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSPositionListView.swift; sourceTree = "<group>"; };
+		28B25C282591EB3300F8075E /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		28B25C292591EB3300F8075E /* AIMSContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIMSContainerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28B25BEC2591EA2B00F8075E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B25C342591EB9400F8075E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28B25BE62591EA2B00F8075E = {
+			isa = PBXGroup;
+			children = (
+				28B25BF12591EA2B00F8075E /* CYQuantClient */,
+				28B25BF02591EA2B00F8075E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28B25BF02591EA2B00F8075E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28B25BEF2591EA2B00F8075E /* CYQuantClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28B25BF12591EA2B00F8075E /* CYQuantClient */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C032591EA8A00F8075E /* Common */,
+				28B25C0B2591EA9800F8075E /* Models */,
+				28B25C112591EAA200F8075E /* Views */,
+				28B25C152591EAAA00F8075E /* ViewModels */,
+				28B25BF22591EA2B00F8075E /* CYQuantClientApp.swift */,
+				28B25BF62591EA2E00F8075E /* Assets.xcassets */,
+				28B25BFB2591EA2E00F8075E /* Info.plist */,
+				28B25BFC2591EA2E00F8075E /* CYQuantClient.entitlements */,
+				28B25BF82591EA2E00F8075E /* Preview Content */,
+			);
+			path = CYQuantClient;
+			sourceTree = "<group>";
+		};
+		28B25BF82591EA2E00F8075E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28B25BF92591EA2E00F8075E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28B25C032591EA8A00F8075E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C052591EA8A00F8075E /* MainCategory.swift */,
+				28B25C1F2591EB2100F8075E /* CategoryManager.swift */,
+				28B25C042591EA8A00F8075E /* Requester.swift */,
+				28B25C062591EA8A00F8075E /* Formatter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		28B25C0B2591EA9800F8075E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C0C2591EA9800F8075E /* AIMSModels.swift */,
+				28B25C0D2591EA9800F8075E /* GenericModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28B25C112591EAA200F8075E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C232591EB3300F8075E /* AIMS */,
+				28B25C292591EB3300F8075E /* AIMSContainerView.swift */,
+				28B25C222591EB3300F8075E /* SideBar.swift */,
+				28B25C282591EB3300F8075E /* View+Extensions.swift */,
+				28B25C122591EAA200F8075E /* ViewHolder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28B25C152591EAAA00F8075E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C162591EAAA00F8075E /* BaseModel.swift */,
+				28B25C172591EAAA00F8075E /* AIMS */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		28B25C172591EAAA00F8075E /* AIMS */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C182591EAAA00F8075E /* AIMSPositionListViewModel.swift */,
+				28B25C192591EAAA00F8075E /* AIMSSellingListViewModel.swift */,
+			);
+			path = AIMS;
+			sourceTree = "<group>";
+		};
+		28B25C232591EB3300F8075E /* AIMS */ = {
+			isa = PBXGroup;
+			children = (
+				28B25C242591EB3300F8075E /* AIMSSellingListView.swift */,
+				28B25C272591EB3300F8075E /* AIMSPositionListView.swift */,
+			);
+			path = AIMS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28B25BEE2591EA2B00F8075E /* CYQuantClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B25BFF2591EA2E00F8075E /* Build configuration list for PBXNativeTarget "CYQuantClient" */;
+			buildPhases = (
+				28B25BEB2591EA2B00F8075E /* Sources */,
+				28B25BEC2591EA2B00F8075E /* Frameworks */,
+				28B25BED2591EA2B00F8075E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYQuantClient;
+			packageProductDependencies = (
+				28B25C332591EB9400F8075E /* Alamofire */,
+			);
+			productName = CYQuantClient;
+			productReference = 28B25BEF2591EA2B00F8075E /* CYQuantClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28B25BE72591EA2B00F8075E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					28B25BEE2591EA2B00F8075E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 28B25BEA2591EA2B00F8075E /* Build configuration list for PBXProject "CYQuantClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28B25BE62591EA2B00F8075E;
+			packageReferences = (
+				28B25C322591EB9400F8075E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 28B25BF02591EA2B00F8075E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28B25BEE2591EA2B00F8075E /* CYQuantClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28B25BED2591EA2B00F8075E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B25BFA2591EA2E00F8075E /* Preview Assets.xcassets in Resources */,
+				28B25BF72591EA2E00F8075E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28B25BEB2591EA2B00F8075E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B25C1A2591EAAA00F8075E /* BaseModel.swift in Sources */,
+				28B25C082591EA8A00F8075E /* MainCategory.swift in Sources */,
+				28B25C1C2591EAAA00F8075E /* AIMSSellingListViewModel.swift in Sources */,
+				28B25C0E2591EA9800F8075E /* AIMSModels.swift in Sources */,
+				28B25C2B2591EB3300F8075E /* AIMSSellingListView.swift in Sources */,
+				28B25C0F2591EA9800F8075E /* GenericModel.swift in Sources */,
+				28B25C202591EB2100F8075E /* CategoryManager.swift in Sources */,
+				28B25C2F2591EB3300F8075E /* View+Extensions.swift in Sources */,
+				28B25C132591EAA200F8075E /* ViewHolder.swift in Sources */,
+				28B25C302591EB3300F8075E /* AIMSContainerView.swift in Sources */,
+				28B25C092591EA8A00F8075E /* Formatter.swift in Sources */,
+				28B25BF32591EA2B00F8075E /* CYQuantClientApp.swift in Sources */,
+				28B25C2E2591EB3300F8075E /* AIMSPositionListView.swift in Sources */,
+				28B25C072591EA8A00F8075E /* Requester.swift in Sources */,
+				28B25C2A2591EB3300F8075E /* SideBar.swift in Sources */,
+				28B25C1B2591EAAA00F8075E /* AIMSPositionListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28B25BFD2591EA2E00F8075E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28B25BFE2591EA2E00F8075E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		28B25C002591EA2E00F8075E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CYQuantClient/CYQuantClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CYQuantClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CYQuantClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cygatro.client.CYQuantClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28B25C012591EA2E00F8075E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CYQuantClient/CYQuantClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"CYQuantClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CYQuantClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cygatro.client.CYQuantClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28B25BEA2591EA2B00F8075E /* Build configuration list for PBXProject "CYQuantClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B25BFD2591EA2E00F8075E /* Debug */,
+				28B25BFE2591EA2E00F8075E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28B25BFF2591EA2E00F8075E /* Build configuration list for PBXNativeTarget "CYQuantClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B25C002591EA2E00F8075E /* Debug */,
+				28B25C012591EA2E00F8075E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28B25C322591EB9400F8075E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28B25C332591EB9400F8075E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B25C322591EB9400F8075E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28B25BE72591EA2B00F8075E /* Project object */;
+}
