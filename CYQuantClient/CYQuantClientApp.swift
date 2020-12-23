@@ -14,6 +14,7 @@ struct CYQuantClientApp: App {
             NavigationView {
                 SideBar()
             }
-            .navigationTitle("CY.Quant")        }
+            .navigationTitle("CY.Quant")
+        }
     }
 }

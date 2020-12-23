@@ -20,6 +20,7 @@ struct BacktestContainerView: View {
                     backtestViewModel.loadTasks()
                 }
             })
+            .frame(minWidth: 900)
     }
     
     @ViewBuilder
@@ -28,7 +29,9 @@ struct BacktestContainerView: View {
             Divider().padding(.bottom, 0)
             NavigationView {
                 BacktestOverviewListView(viewModel: backtestViewModel)
+                    .frame(minWidth: 120)
                 Text("左边选个任务查看")
+                    .frame(minWidth: 300)
             }
         }
     }

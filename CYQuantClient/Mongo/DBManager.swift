@@ -59,4 +59,8 @@ class DBManager {
     func collection(with type: DBCollectionType) -> MongoCollection<BSONDocument>? {
         client?.db(type.dbName).collection(type.collectionName)
     }
+    
+    func collection<T: Codable>(with type: DBCollectionType, modelType: T.Type) -> MongoCollection<T>? {
+        client?.db(type.dbName).collection(type.collectionName, withType: modelType.self)
+    }
 }
